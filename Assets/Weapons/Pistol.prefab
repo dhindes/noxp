@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3212948033469926588
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 408085607841446035, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Name
+      value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1508
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45498
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.713
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446060, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446061, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: ammo
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446061, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: accuracy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446061, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: kickAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085607841446061, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: secondsBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408085608412841184, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 34a2ce92676f5fe4a92f313c92ae469c, type: 2}
+    - target: {fileID: 2168063176613342010, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Height
+      value: 9.156725
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168063176613342010, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Radius
+      value: 0.96850646
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168063176613342010, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168063176613342010, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Center.y
+      value: -0.000000048428774
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168063176613342010, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Center.z
+      value: -0.00000008940699
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546750405969504249, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: displayName
+      value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225077791259888513, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225077791259888513, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 814fada8f46ea12408365cdcb8168f7c, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3bfc18c523e91b74797104fd121ea6fe, type: 3}

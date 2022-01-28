@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &735798257355978380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735798257355978382}
+  - component: {fileID: 735798257355978383}
+  m_Layer: 0
+  m_Name: Level Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735798257355978382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735798257355978380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735798257355978383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735798257355978380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ecbee650830a641bbd10c007d847eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelName: 
+  alarmLevels: 0
+  possibleChunkPrefabs:
+  - {fileID: 7914321367238671520, guid: 988931dc4df45e54690c509c62245ada, type: 3}
+  - {fileID: 4213713138740744386, guid: 7aba22b7eb3a4d346a0afc2ba6d94c88, type: 3}
+  - {fileID: 8509950372791337248, guid: af46c1cd3e60cfc4996fcae90779c29e, type: 3}
+  - {fileID: 8509950372791337248, guid: 7a96f7283aa001e40b56353ebbf204fe, type: 3}
+  weaponPrefabs:
+  - {fileID: 1621886095763685826, guid: 4cf3a63fbcff9534eb172e7d6f44cd1b, type: 3}
+  - {fileID: 2972200399501882415, guid: e064057a5f8d1b64f99c03fd9be00c57, type: 3}
+  - {fileID: 195603197312938354, guid: 3e060bf93c4a7744e917196bd72f4716, type: 3}
+  - {fileID: 2972200399501882415, guid: 24d6d74f4d04d1b4b9b16a80831d7b42, type: 3}
+  - {fileID: 1621886095763685826, guid: f48b76df524e69147930c2fea1acce6b, type: 3}
+  - {fileID: 195603197312938354, guid: 004221595a75dd54ead125a244ebe803, type: 3}
+  - {fileID: 1621886095763685826, guid: 620f29277d65fe040b9970b2e3f2fbac, type: 3}
+  - {fileID: 3317321605812147723, guid: b3ca734539c66a24497a925ae67ca7ed, type: 3}
+  - {fileID: 3317321605812147723, guid: 4862298e6390730468ad217dd5ff9391, type: 3}
+  antiquePrefab: {fileID: 9149537005153305311, guid: 7c67b041711ab3e4785ea14f79fd38b0, type: 3}
+  guardPrefab: {fileID: 2977710835973210508, guid: c59d3e95fd9fefb4fa792faa1f801dbf, type: 3}
+  swarmerTypes:
+  - {fileID: 3195117245374981503, guid: e93189278684d9c4d85e01981797e906, type: 3}
+  - {fileID: 4614418012617767316, guid: 3f641305089d246438a3784966368e1d, type: 3}
+  - {fileID: 5018387819640171675, guid: 0a65d2bbca976c346b580351101128d6, type: 3}
+  ratioOfAntiquePlinths: 0.5
+  numberOfGuardsToCreate: 1
+  numberOfSpawnersToCreate: 1
+  widthInChunks: 3
+  lengthInChunks: 1
