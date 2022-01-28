@@ -9,6 +9,7 @@ Assets/AssetStoreTools*
 .DS_Store
 
 *.log
+Logs/ApiUpdaterCheck.txt
 
 # Visual Studio cache directory
 .vs/
