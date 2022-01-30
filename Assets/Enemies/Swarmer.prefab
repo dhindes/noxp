@@ -177,6 +177,9 @@ MonoBehaviour:
   maxHealth: 2
   healthBarPrefab: {fileID: 2285053456968525814, guid: dce711b54d057194795504c86bd42ce2, type: 3}
   deathEffectPrefab: {fileID: 1004069537281191669, guid: 5f0738318708c0f4e87be0f977e80be4, type: 3}
+  bounty: 100
+  chanceOfBounty: 0.2
+  secondsForBountyToDecay: 10
 --- !u!195 &9071086313922489237
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -6,6 +6,9 @@ public class ScoreManager : MonoBehaviour
 {
     public int score;
     public int highScore;
+    public float secondsToShowRecentScore;
+    int recentScore;
+    float secondsSinceShowingRecentScore;
 
     private void Awake()
     {
@@ -32,6 +35,23 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int amount)
     {
         score += amount;
+        recentScore += amount;
+        References.canvas.recentScoreText.text = "+" + recentScore.ToString();
+        secondsSinceShowingRecentScore = 0;
         References.canvas.scoreText.text = score.ToString();
+        if (recentScore > 0)
+        {
+            References.canvas.recentScoreText.enabled = true;
+        }
+    }
+
+    private void Update()
+    {
+        secondsSinceShowingRecentScore += Time.deltaTime;
+        if (secondsSinceShowingRecentScore >= secondsToShowRecentScore)
+        {
+            recentScore = 0;
+            References.canvas.recentScoreText.enabled = false;
+        }
     }
 }

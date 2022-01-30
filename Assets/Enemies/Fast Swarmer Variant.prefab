@@ -107,8 +107,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
+      propertyPath: bounty
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
       propertyPath: maxHealth
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
+      propertyPath: chanceOfBounty
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
+      propertyPath: secondsForBountyToDecay
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1532737674461385221, guid: 3f641305089d246438a3784966368e1d, type: 3}
       propertyPath: speed

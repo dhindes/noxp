@@ -8,8 +8,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
+      propertyPath: bounty
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
       propertyPath: maxHealth
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194277451518781157, guid: 3f641305089d246438a3784966368e1d, type: 3}
+      propertyPath: secondsForBountyToDecay
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4614418012617767306, guid: 3f641305089d246438a3784966368e1d, type: 3}
       propertyPath: m_RootOrder

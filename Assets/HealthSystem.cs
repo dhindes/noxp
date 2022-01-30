@@ -11,6 +11,10 @@ public class HealthSystem : MonoBehaviour
     public GameObject healthBarPrefab;
     public GameObject deathEffectPrefab;
     HealthBar myHealthBar;
+    public float bounty;
+    public float chanceOfBounty;
+    public float secondsForBountyToDecay;
+    float decayRate;
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +24,16 @@ public class HealthSystem : MonoBehaviour
         myHealthBar = healthBarObject.GetComponent<HealthBar>();
         currentHealth = maxHealth;
         myHealthBar.ShowHealthFraction(currentHealth / maxHealth);
+        if (Random.value > chanceOfBounty)
+        {
+            bounty = 0;
+        }
+        
+        if (secondsForBountyToDecay != 0)
+        {
+            decayRate = bounty / secondsForBountyToDecay;
+        }
+        myHealthBar.bountyText.text = bounty.ToString();
     }
 
     // Update is called once per frame
@@ -32,7 +46,20 @@ public class HealthSystem : MonoBehaviour
         {
             myHealthBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + Vector3.up * 2);
         }
-        
+        if (bounty > 0)
+        {
+            bounty -= decayRate * Time.deltaTime;
+            myHealthBar.bountyText.enabled = true;
+            myHealthBar.bountyText.text = BountyAsInt().ToString();
+        }
+        else
+        {
+            if (bounty < 0)
+            {
+                bounty = 0;
+            }
+            myHealthBar.bountyText.enabled = false;
+        }
     }
     public void TakeDamage(float damageAmount)
     {
@@ -43,10 +70,12 @@ public class HealthSystem : MonoBehaviour
             myHealthBar.ShowHealthFraction(currentHealth / maxHealth);
             if (currentHealth <= 0)
             {
+                // This is where we die
                 if (deathEffectPrefab != null)
                 {
                     Instantiate(deathEffectPrefab, transform.position, transform.rotation);
                 }
+                References.scoreManager.IncreaseScore(BountyAsInt());
                 Destroy(gameObject);
             }
         }
@@ -61,6 +90,11 @@ public class HealthSystem : MonoBehaviour
     {
         currentHealth = maxHealth;
         myHealthBar.ShowHealthFraction(currentHealth / maxHealth);
+    }
+
+    int BountyAsInt()
+    {
+        return Mathf.FloorToInt(bounty);
     }
 
     private void OnDestroy()
